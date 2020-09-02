@@ -45,7 +45,7 @@ if (is_admin()) {
 add_filter('the_title', 'san_spe_title', 100, 2);
 
 // i18n
-add_action('init', 'san_spe_i18n_text_domain');
+add_action('plugins_loaded', 'san_spe_i18n_text_domain');
 
 // SHORTCODES
 add_shortcode('expires', 'san_spe_shortcodes_expires');
