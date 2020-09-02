@@ -12,7 +12,7 @@ function san_spe_is_expired($post_id = 0) {
 
 function san_spe_title($title = '', $post_id = 0) {
     if (san_spe_is_expired($post_id)) {
-        $prefix = get_option('san_spe_prefix', 'EXPIRED');
+        $prefix = get_option('san_spe_prefix', __('Expired', 'san-spe'));
         $title = $prefix.'&nbsp;'.$title;
     }
     return $title;

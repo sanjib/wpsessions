@@ -2,8 +2,8 @@
 
 function san_spe_shortcodes_expires($attrs, $content = null) {
     $attrs = shortcode_atts([
-        'expires_on' => 'This item will expire on %s!',
-        'expired_on' => 'This item has already expired on %s!',
+        'expires_on' => __('This item will expire on %s!', 'san-spe'),
+        'expired_on' => __('This item has already expired on %s!', 'san-spe'),
         'date_format' => get_option('date_format', 'F j, Y'),
         'class' => 'san-spe-post-expiration',
         'id' => 'san-spe-post-expiration-%d',

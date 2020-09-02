@@ -1,0 +1,86 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Simple Post Expiration\n"
+"POT-Creation-Date: 2020-09-02 18:25+0800\n"
+"PO-Revision-Date: 2020-09-02 18:27+0800\n"
+"Last-Translator: Sanjib Ahmad <sanjib.ahmad@gmail.com>\n"
+"Language-Team: Sanjib Ahmad\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;_x\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: includes/common.php:15 includes/settings.php:13 includes/widgets.php:96
+msgid "Expired"
+msgstr ""
+
+#: includes/metabox.php:8
+msgid "never"
+msgstr ""
+
+#: includes/metabox.php:14
+msgid "Expires:"
+msgstr ""
+
+#: includes/metabox.php:18
+msgid "Edit"
+msgstr ""
+
+#: includes/metabox.php:19
+msgid "Edit date and time"
+msgstr ""
+
+#: includes/metabox.php:31
+msgid "OK"
+msgstr ""
+
+#: includes/metabox.php:32
+msgid "Cancel"
+msgstr ""
+
+#: includes/settings.php:6
+msgid "Prefix Text for Expired Posts"
+msgstr ""
+
+#: includes/settings.php:17
+msgid "Enter text that will be prefixed to the title of expired posts"
+msgstr ""
+
+#: includes/shortcodes.php:5
+#, php-format
+msgid "This item will expire on %s!"
+msgstr ""
+
+#: includes/shortcodes.php:6
+#, php-format
+msgid "This item has already expired on %s!"
+msgstr ""
+
+#: includes/widgets.php:10
+msgid "Expired / Expiring Posts"
+msgstr ""
+
+#: includes/widgets.php:12
+msgid "Display a list of expired or expiring posts"
+msgstr ""
+
+#: includes/widgets.php:73
+msgid "Title"
+msgstr ""
+
+#: includes/widgets.php:83
+msgid "Type"
+msgstr ""
+
+#: includes/widgets.php:89
+msgid "Expiring soon"
+msgstr ""
+
+#: includes/widgets.php:101
+msgid "Number of Posts to Show"
+msgstr ""

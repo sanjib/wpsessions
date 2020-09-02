@@ -11,7 +11,7 @@ function san_spe_metabox() {
     <div id="san-spe-expiration-wrap" class="misc-pub-section">
         <span>
             <span class="wp-media-buttons-icon dashicons dashicons-calendar"></span>&nbsp;
-            <?php _e( 'Expires:', 'pw-spe' ); ?>
+            <?php _e( 'Expires', 'san-spe' ); ?>:
             <b id="san-spe-expiration-label"><?php echo $label; ?></b>
         </span>
         <a href="#" id="san-spe-edit-expiration" class="san-spe-edit-expiration hide-if-no-js">

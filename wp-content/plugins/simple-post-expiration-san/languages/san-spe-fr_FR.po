@@ -1,0 +1,86 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Simple Post Expiration\n"
+"POT-Creation-Date: 2020-09-02 18:59+0800\n"
+"PO-Revision-Date: 2020-09-02 18:59+0800\n"
+"Last-Translator: Sanjib Ahmad <sanjib.ahmad@gmail.com>\n"
+"Language-Team: Sanjib Ahmad\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;_x\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: includes/common.php:15 includes/settings.php:13 includes/widgets.php:96
+msgid "Expired"
+msgstr "Expiré"
+
+#: includes/metabox.php:8
+msgid "never"
+msgstr "jamais"
+
+#: includes/metabox.php:14
+msgid "Expires"
+msgstr "Expire"
+
+#: includes/metabox.php:18
+msgid "Edit"
+msgstr "Éditer"
+
+#: includes/metabox.php:19
+msgid "Edit date and time"
+msgstr "Modifier la date et l'heure"
+
+#: includes/metabox.php:31
+msgid "OK"
+msgstr "D'accord"
+
+#: includes/metabox.php:32
+msgid "Cancel"
+msgstr "Annuler"
+
+#: includes/settings.php:6
+msgid "Prefix Text for Expired Posts"
+msgstr "Texte de préfixe pour les messages expirés"
+
+#: includes/settings.php:17
+msgid "Enter text that will be prefixed to the title of expired posts"
+msgstr "Entrez le texte qui sera préfixé au titre des articles expirés"
+
+#: includes/shortcodes.php:5
+#, php-format
+msgid "This item will expire on %s!"
+msgstr "Cet article expirera le %s!"
+
+#: includes/shortcodes.php:6
+#, php-format
+msgid "This item has already expired on %s!"
+msgstr "Cet article a déjà expiré le %s!"
+
+#: includes/widgets.php:10
+msgid "Expired / Expiring Posts"
+msgstr "Messages expirés / expirant"
+
+#: includes/widgets.php:12
+msgid "Display a list of expired or expiring posts"
+msgstr "Afficher une liste de messages expirés ou expirant"
+
+#: includes/widgets.php:73
+msgid "Title"
+msgstr "Titre"
+
+#: includes/widgets.php:83
+msgid "Type"
+msgstr "Type"
+
+#: includes/widgets.php:89
+msgid "Expiring soon"
+msgstr "Expire bientôt"
+
+#: includes/widgets.php:101
+msgid "Number of Posts to Show"
+msgstr "Nombre de messages à afficher"

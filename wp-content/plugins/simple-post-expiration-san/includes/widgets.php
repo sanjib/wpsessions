@@ -6,9 +6,12 @@ function san_spe_widgets_register() {
 
 class SanSpeWidget extends WP_Widget {
     function SanSpeWidget() {
-        parent::__construct(false, __('Expired / Expiring Posts'), [
-            'description' => 'Display a list of expired or expiring posts',
-        ]);
+        parent::__construct(false,
+            __('Expired / Expiring Posts', 'san-spe'),
+            [
+                'description' => __('Display a list of expired or expiring posts', 'san-spe'),
+            ]
+        );
     }
 
     function widget($args, $instance) {
@@ -27,7 +30,7 @@ class SanSpeWidget extends WP_Widget {
                 [
                     'key' => 'san_spe_expiration',
                     'value' => date('Y-n-d', current_time('timestamp')),
-                    'compare' => 'expiring' == $instance['type'] ? '>' : '=<',
+                    'compare' => 'expiring' == $instance['type'] ? '>=' : '<',
                     'type' => 'DATETIME',
                 ],
             ],
@@ -66,7 +69,9 @@ class SanSpeWidget extends WP_Widget {
         $number = isset($instance['number']) ? $instance['number'] : 5;
         ?>
         <p>
-            <label for="<?= esc_attr($this->get_field_id('title')) ?>">Title: </label>
+            <label for="<?= esc_attr($this->get_field_id('title')) ?>">
+                <?= __('Title', 'san-spe') ?>:
+            </label>
             <input class="widefat"
                    name="<?= esc_attr($this->get_field_name('title')) ?>"
                    id="<?= esc_attr($this->get_field_id('title')) ?>"
@@ -74,7 +79,9 @@ class SanSpeWidget extends WP_Widget {
                    type="text" />
         </p>
 
-        <span>Type:</span> &nbsp;
+        <span>
+            <?= __('Type', 'san-spe') ?>:
+        </span> &nbsp;
         <label>
             <input name="<?= esc_attr($this->get_field_name('type')) ?>"
                    value="expiring" <?= checked("expiring", $type) ?>
@@ -90,7 +97,9 @@ class SanSpeWidget extends WP_Widget {
         </label>
 
         <p>
-            <label for="<?= esc_attr($this->get_field_id('number')) ?>">Number of Posts to Show: </label>
+            <label for="<?= esc_attr($this->get_field_id('number')) ?>">
+                <?= __('Number of Posts to Show', 'san-spe') ?>:
+            </label>
             <input class="tinytext"
                    name="<?= esc_attr($this->get_field_name('number')) ?>"
                    id="<?= esc_attr($this->get_field_id('number')) ?>"

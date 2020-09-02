@@ -6,7 +6,7 @@
  * Author URI: https://virtual-apps.com
  * Description: A simple plugin that allows you to set an expiration date on posts. Requires "Classic Editor" plugin.
  * Text Domain: san-spe
- * Domain Path: languages
+ * Domain Path: /languages
  * License: Apache License, Version 2.0
  * License URI: http://www.apache.org/licenses/LICENSE-2.0
  *
@@ -32,6 +32,7 @@ define('SAN_SPE_ASSETS_URL', plugin_dir_url(__FILE__).'assets');
 require_once dirname(__FILE__).'/includes/common.php';
 require_once dirname(__FILE__).'/includes/shortcodes.php';
 require_once dirname(__FILE__).'/includes/widgets.php';
+require_once dirname(__FILE__).'/includes/i18n.php';
 
 if (is_admin()) {
     require_once dirname(__FILE__) . '/includes/metabox.php';
@@ -42,6 +43,9 @@ if (is_admin()) {
 
 // COMMON
 add_filter('the_title', 'san_spe_title', 100, 2);
+
+// i18n
+add_action('init', 'san_spe_i18n_text_domain');
 
 // SHORTCODES
 add_shortcode('expires', 'san_spe_shortcodes_expires');
