@@ -1,0 +1,22 @@
+# ignores - wp-content
+!wp-content/
+wp-content/*
+!wp-content/plugins/
+wp-content/plugins/*
+
+# don't ignore following plugins
+!wp-content/plugins/simple-post-expiration-san/
+
+# ignores - root folders and files
+.idea
+wp-admin
+wp-includes
+/.htaccess
+/*.php
+/*.txt
+/*.html
+
+# ignores - log files and databases
+*.log
+*.sql
+*.sqlite
